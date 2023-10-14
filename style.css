@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECEFF1;
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.04);
+    z-index: 99999999999999;
+}
+header .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+.links a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4 ease-in-out;
+}
+
+.links a:hover{
+    color: #7C0F0F ;
+}
+.links{
+    display: flex;
+    gap: 25px;
+}
+.container{
+    margin: auto;
+    padding:  10px;
+    width: 1150px;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+@media screen and (max-width: 1200px){
+    .container {
+    
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+.herosection{
+    min-height: 90vh;
+    background-color: #424242;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5) url(/img/Nigerias-equities-market.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    display: flex;
+    background-attachment: fixed;
+  
+    align-items: center;
+}
+
+.landingpagetext{
+    width: 50%;
+    color: #fff;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.78;
+    margin-top: 30px;
+}
+
+.learnmore{
+    margin-top: 10px;
+    background:  #7C0F0F ;
+    border: 1px solid #7C0F0F ;
+    border-radius: 6px;
+    border-radius: 5px!important;
+    color: #fff!important;
+    padding: 10px;
+    text-align: center;
+    transition: .5s;
+    width: fit-content;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.78;
+    cursor: pointer;
+}
+
+.outproducts{
+margin-top: 30px;
+}
+
+.ourservices{
+    grid-gap: 30px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    width: 100%;
+}
+
+.servicescard{
+    width: 100%;
+    background-color: #7C0F0F ;
+    border-radius: 2px;
+}
+
+.servicescard img{
+    width: 100%;
+}
+
+.servicetext{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+padding: 5px;
+width: 100%;
+
+}
+.twocolumnflex{
+    width: 100%;
+    background-color: white;
+}
+.columnbox{
+    width: 100%;
+    display: flex;
+}
+
+.columnboxone, .columnboxtwo{
+width: 100%;
+max-height: 400px;
+}
+
+.columnboxone{
+    overflow: hidden;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+.columnboxone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.4s ; /* Add a smooth transition effect */
+}
+
+.columnbox:hover .columnboxone img {
+    transform: scale(1.2); /* Increase the size of the image on hover */
+}
+
+.columnboxtwo{
+    display: flex;
+flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.datacard{
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.columntitle{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    color: #424242;
+}
+
+.columnbody{
+    font-size: 15px;
+    line-height: 1.6em;
+    color: #7B7B7B;
+}
+
+.powering {
+    color: #252525;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 160%;
+    margin-top: 60px;
+}
+
+.powering, .smalltext {
+    font-family: Poppins;
+    font-style: normal;
+    text-align: center;
+}
+
+.smalltext {
+    color: #383838;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 175%;
+    padding-bottom: 30px;
+}
+
+.capitaltabletitle{
+    padding: 13px;
+    width: 100%;
+    background-color: #7C0F0F;
+    color: white;
+}
+.capitalreport{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.capitaltable{
+    width: 50%;
+    border: 1px solid #7C0F0F;
+
+}
+
+.capitaltablelist{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.capitaltabletab{
+    font-size: 14px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.2em;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+th {
+    background-color: #fcf8e3;
+    color: #252525;
+}
+
+th, td {
+    font-size: 14px;
+}
+
+td {
+    font-weight: 299;
+}
+
+/* Apply specific styles to the % Change column based on the value */
+.loosrs td:nth-child(4) {
+    color: white;
+    background-color: #e31616;
+    padding: 5px;
+}
+
+td:nth-child(4):before {
+    content: attr(data-content);
+}
+
+
+.gainers td:nth-child(4) {
+    color: white;
+    background-color: #19d241;
+    padding: 5px;
+}
+
+.tabletabs{
+    display: flex;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
+
+@media screen and (max-width:1000px) {
+    .links{
+        display: none;
+    }
+    .landingpagetext , .capitaltable{
+        width: 100%;
+        text-align: center;
+    }
+    .herosection .container{
+        align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    }
+    .capitalreport, .columnbox{
+        flex-direction: column;
+    }
+    .outproducts {
+        margin-top: 10px;
+    }
+
+    .herosection {
+        min-height: 60vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5) url(/img/Nigerias-equities-market.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: darken;
+        display: flex;
+        background-attachment: fixed;
+        align-items: center;
+    
+    }
+}
